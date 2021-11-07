@@ -3,6 +3,15 @@ import "./App.css";
 import Navbar from "./layouts/Navbar/Navbar";
 import badgesImg from "assets/images/badges-img.webp";
 import LinkBtn from "components/LinkBtn/LinkBtn";
+import company1 from "assets/images/company-1.webp";
+import company2 from "assets/images/company-2.webp";
+import company3 from "assets/images/company-3.webp";
+import company4 from "assets/images/company-4.webp";
+import company5 from "assets/images/company-5.webp";
+import company6 from "assets/images/company-6.webp";
+import SideBySideSection from "components/SideBySideSection/SideBySideSection";
+import platformImg from "assets/images/platform-img.webp";
+import integrationImg from "assets/images/integration-img.webp";
 
 function App() {
   return (
@@ -61,6 +70,46 @@ function App() {
           </div>
         </div>
       </div>
+
+      <div className="container-wrapper">
+        <div className="companies">
+          <p className="text-center fs-24px dark-blue mb-40px">
+            Trusted by more than 12,000 businesses in 140 countries.
+          </p>
+
+          <div className="companies-images">
+            <img src={company1} alt="" />
+            <img src={company2} alt="" />
+            <img src={company3} alt="" />
+            <img src={company4} alt="" />
+            <img src={company5} alt="" />
+            <img src={company6} alt="" />
+          </div>
+        </div>
+      </div>
+
+      {/*  */}
+      <div className="container-wrapper">
+        <p className="cards-title fs-36px text-center graphik-medium darkest-blue">
+          What you can do with Help Scout
+        </p>
+      </div>
+
+      <SideBySideSection
+        headline="Platform"
+        title="Every support tool you need, out of the box"
+        subtitle="With features like shared email, live chat, knowledge base, reports, and much more, Help Scout gives growing companies the flexibility and visibility to support customers at scale."
+        linkTitle="How it works"
+        identity={true}
+        img={platformImg}
+      />
+      <SideBySideSection
+        headline="Integrations"
+        title="Connect the tools you already use"
+        subtitle="Explore 50+ integrations that make your day-to-day workflow more efficient and familiar. Our extensive developer tools might also strike your fancy"
+        linkTitle="See all Integrations"
+        img={integrationImg}
+      />
     </div>
   );
 }

@@ -266,6 +266,7 @@ button {
   gap: 100px;
   padding-top: 94px;
   justify-content: space-between;
+  margin-bottom: 90px;
 }
 
 .section-left {
@@ -335,4 +336,51 @@ button {
   box-shadow: rgb(22 51 127 / 20%) 0px 40px 50px;
   border-radius: 6px;
   /* margin-right: -100px; */
+}
+
+/* companies */
+.companies {
+  padding-bottom: 160px;
+}
+.companies-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.companies-images img {
+  width: 138px;
+}
+
+/* cards-title */
+.cards-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-bottom: 80px; */
+}
+
+.cards-title::before {
+  background-image: url(./assets/images/title-animation-left.gif);
+  background-position: center center;
+  background-size: 100%;
+
+  content: "";
+  width: 75px;
+  height: 111px;
+
+  text-align: center;
+}
+.cards-title::after {
+  background-image: url(./assets/images/title-animation-right.gif);
+  background-position: center center;
+  background-size: 100%;
+
+  content: "";
+  width: 75px;
+  height: 111px;
+
+  text-align: center;
 }
