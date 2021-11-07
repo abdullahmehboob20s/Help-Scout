@@ -12,12 +12,17 @@ import company6 from "assets/images/company-6.webp";
 import SideBySideSection from "components/SideBySideSection/SideBySideSection";
 import platformImg from "assets/images/platform-img.webp";
 import integrationImg from "assets/images/integration-img.webp";
+import resourcesImg1 from "assets/images/resources-img-1.webp";
+import resourcesImg2 from "assets/images/resources-img-2.webp";
+import resourcesImg3 from "assets/images/resources-img-3.webp";
+import resourcesImg4 from "assets/images/resources-img-4.webp";
+import ResourcesCard from "components/ResourcesCard/ResourcesCard";
+import List from "components/List/List";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-
       <div className="pt-90px">
         <div className="container-wrapper">
           <div className="section">
@@ -70,7 +75,6 @@ function App() {
           </div>
         </div>
       </div>
-
       <div className="container-wrapper">
         <div className="companies">
           <p className="text-center fs-24px dark-blue mb-40px">
@@ -87,14 +91,12 @@ function App() {
           </div>
         </div>
       </div>
-
       {/*  */}
       <div className="container-wrapper">
         <p className="cards-title fs-36px text-center graphik-medium darkest-blue">
           What you can do with Help Scout
         </p>
       </div>
-
       <SideBySideSection
         headline="Platform"
         title="Every support tool you need, out of the box"
@@ -110,6 +112,144 @@ function App() {
         linkTitle="See all Integrations"
         img={integrationImg}
       />
+
+      <div className="bg-content">
+        <div className="resources-wrapper">
+          <div className="container-wrapper">
+            <div className="resources">
+              <p className="text-center fs-36px darkest-blue graphik-medium mb-20px">
+                Content and resources
+              </p>
+              <p className="text-center lh-2 fs-18px light-blue ">
+                Learn how to scale your customer support function while
+                maintaining high-quality support with <br /> these helpful
+                resources written by our team of customer champions
+              </p>
+
+              <div className="resources-cards">
+                <ResourcesCard
+                  img={resourcesImg1}
+                  headline="FREE GUIDE"
+                  title="Step by Step: How to Choose Your Perfect Help Desk"
+                />
+                <ResourcesCard
+                  img={resourcesImg2}
+                  headline="CUSTOMER STORY"
+                  title="How Brain.fm Achieved a 95% CSAT Score With Help Scout"
+                />
+                <ResourcesCard
+                  img={resourcesImg3}
+                  headline="FREE COURSE"
+                  title="Foundations of Great Service: 6-Part Email Series"
+                />
+                <ResourcesCard
+                  img={resourcesImg4}
+                  headline="SCALING SUPPORT"
+                  title="The Right Way to Scale Customer Support"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="help-scout-wrapper my-150px">
+          <div className="container-wrapper">
+            <div className="help-scout">
+              <p className="fs-30px mb-25px graphik-medium darkest-blue">
+                Get started with Help Scout
+              </p>
+              <p className="mb-30px light-blue lh-2 fs-18px">
+                Want to learn what Help Scout can do for you? See for yourself
+                with a free trial — we'll happily extend you if you need more
+                time.
+              </p>
+              <button className="button-wrapper fs-18px white bg-sharp-blue radius-4px pointer">
+                Try for free
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*  */}
+      <div className="footer-wrapper">
+        <div className="container-wrapper">
+          <div className="footer">
+            <div className="footer-title-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 137.5 166"
+                role="img"
+                className="mb-15px"
+                style={{ width: "25px", height: "30px" }}
+              >
+                <path
+                  fill="#1292ee"
+                  d="M9.9 97.2l48.6-48.6c6.3-6.2 10.2-14.9 10.2-24.4 0-9.4-3.8-18-9.9-24.2L10.2 48.6C3.9 54.8 0 63.5 0 73c0 9.5 3.8 18 9.9 24.2zM127.6 68.8L79 117.4c-6.3 6.2-10.2 14.9-10.2 24.4 0 9.4 3.8 18 9.9 24.2l48.6-48.6c6.3-6.2 10.2-14.9 10.2-24.4 0-9.5-3.8-18-9.9-24.2zM127.3 48.7s0-.1 0 0c6.3-6.2 10.2-14.9 10.2-24.4 0-9.4-3.8-18-9.9-24.2L10.2 117.4C3.9 123.6 0 132.3 0 141.8c0 9.4 3.8 18 9.9 24.2L127.3 48.7z"
+                ></path>
+              </svg>
+              <p className="white fs-24px footer-title-box-title">
+                Tools for the world's most customer-centric businesses
+              </p>
+            </div>
+            <div className="footer-box">
+              <List
+                listTitle="Platform"
+                listData={[
+                  { title: "Shared Inbox", link: "#" },
+                  { title: "Knowledge Base", link: "#" },
+                  { title: "Live Chat", link: "#" },
+                  { title: "Messaging", link: "#" },
+                  { title: "Customer Management", link: "#" },
+                  { title: "Reporting", link: "#" },
+                  { title: "Integrations", link: "#" },
+                  { title: "iOS & Android", link: "#" },
+                  { title: "More Features", link: "#" },
+                ]}
+              />
+            </div>
+            <div className="footer-box">
+              <List
+                listTitle="Compare"
+                listData={[
+                  { title: "Help Scout vs. Zendesk", link: "#" },
+                  { title: "Help Scout vs. Intercom", link: "#" },
+                  { title: "Help Scout vs. Front", link: "#" },
+                  { title: "Help Scout vs. Freshdesk", link: "#" },
+                ]}
+              />
+            </div>
+            <div className="footer-box">
+              <List
+                listTitle="Company"
+                listData={[
+                  { title: "About Us", link: "#" },
+                  { title: "Careers", link: "#" },
+                  { title: "DEI Dashboard", link: "#" },
+                  { title: "Help Scout for Good", link: "#" },
+                  { title: "Startup Program", link: "#" },
+                  { title: "Brand Handbook", link: "#" },
+                  { title: "In the Works", link: "#", new: true },
+                  { title: "Terms & Privacy", link: "#" },
+                  { title: "Accessibility Statement", link: "#" },
+                ]}
+              />
+            </div>
+            <div className="footer-box">
+              <List
+                listTitle="Get Help"
+                listData={[
+                  { title: "Developers", to: "true", link: "#" },
+                  { title: "Help Docs", to: "true", link: "#" },
+                  { title: "Free Training", link: "#" },
+                  { title: "Contact Sales", link: "#" },
+                  { title: "Status", to: "true", link: "#", revenu: "true" },
+                ]}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
