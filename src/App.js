@@ -18,6 +18,27 @@ import resourcesImg3 from "assets/images/resources-img-3.webp";
 import resourcesImg4 from "assets/images/resources-img-4.webp";
 import ResourcesCard from "components/ResourcesCard/ResourcesCard";
 import List from "components/List/List";
+import bCorpImg from "assets/images/b-corp-img.svg";
+import pledgeImg from "assets/images/pledge.svg";
+
+import { ReactComponent as TwitterIcon } from "assets/images/twitterIcon.svg";
+import { ReactComponent as FacebookIcon } from "assets/images/facebook-icon.svg";
+import { ReactComponent as LinkdenIcon } from "assets/images/linkden-icon.svg";
+
+import liveChatImg from "assets/images/live-chat.webp";
+import inboxImg from "assets/images/inbox.webp";
+import helpCenterImg from "assets/images/help-center.webp";
+import heartImg from "assets/images/heart.webp";
+
+import papersImg from "assets/images/papers.webp";
+import hammerImg from "assets/images/hammer.webp";
+import analyticsImg from "assets/images/analytics.webp";
+import puzzelImg from "assets/images/puzzel.webp";
+
+import ringLogo from "assets/images/ring-logo.webp";
+
+import signImg from "assets/images/sign.png";
+import SupportCard from "components/SupportCard/SupportCard";
 
 function App() {
   return (
@@ -113,6 +134,102 @@ function App() {
         img={integrationImg}
       />
 
+      {/* support */}
+      <div className="support-wrapper">
+        <div className="container-wrapper">
+          <div className="support-titles ">
+            <p className="text-center fs-36px graphik-medium darkest-blue mb-25px">
+              A complete support solution
+            </p>
+            <p className="fs-18px light-blue text-center lh-2 graphik-regular ">
+              Email, self-service, live chat, and proactive support, customer
+              data, 50+ integrations, and customizable reports — Help Scout
+              comes with everything you need to deliver a great customer
+              experience.
+            </p>
+          </div>
+        </div>
+
+        <div className="product-overview">
+          <div className="canvas-wrapper">
+            <div className="canvas">
+              <div className="ring ring-outer-1"></div>
+              <div class="ring inner-ring-1"></div>
+              <div class="ring inner-ring-2"></div>
+              <div class="ring inner-ring-3"></div>
+
+              {/* .cbkQR */}
+
+              <div className="cbkQR live-chat">
+                <SupportCard img={liveChatImg} className="bg-ring-green first">
+                  Live <br /> Chat
+                </SupportCard>
+              </div>
+              <div className="cbkQR shared-inbox">
+                <SupportCard img={inboxImg} className="bg-ring-pink second">
+                  SHARED
+                  <br /> INBOX
+                </SupportCard>
+              </div>
+              <div className="cbkQR help-center">
+                <SupportCard img={helpCenterImg} className="bg-ring-blue third">
+                  HELP
+                  <br />
+                  CENTER
+                </SupportCard>
+              </div>
+              <div className="cbkQR proactive">
+                <SupportCard img={heartImg} className="bg-ring-purple fourth">
+                  PROACTIVE <br /> MESSAGES
+                </SupportCard>
+              </div>
+
+              <div className="cbkQR customer-data">
+                <div className="ring-inner-content first">
+                  <img src={papersImg} className="mb-15px" alt="" />
+                  <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
+                    CUSTOMER
+                    <br />
+                    DATA
+                  </p>
+                </div>
+              </div>
+              <div className="cbkQR tools">
+                <div className="ring-inner-content second">
+                  <img src={hammerImg} className="mb-15px" alt="" />
+                  <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
+                    COLLABORATION
+                    <br />
+                    TOOLS
+                  </p>
+                </div>
+              </div>
+              <div className="cbkQR report">
+                <div className="ring-inner-content third">
+                  <img src={analyticsImg} className="mb-15px" alt="" />
+                  <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
+                    REPORTING
+                  </p>
+                </div>
+              </div>
+              <div className="cbkQR integration">
+                <div className="ring-inner-content fourth">
+                  <img src={puzzelImg} className="mb-15px" alt="" />
+                  <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
+                    INTEGRATIONS
+                  </p>
+                </div>
+              </div>
+
+              {/*  */}
+              <div className="ring-logo">
+                <img src={ringLogo} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="bg-content">
         <div className="resources-wrapper">
           <div className="container-wrapper">
@@ -174,78 +291,125 @@ function App() {
       {/*  */}
       <div className="footer-wrapper">
         <div className="container-wrapper">
-          <div className="footer">
-            <div className="footer-title-box">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 137.5 166"
-                role="img"
-                className="mb-15px"
-                style={{ width: "25px", height: "30px" }}
-              >
-                <path
-                  fill="#1292ee"
-                  d="M9.9 97.2l48.6-48.6c6.3-6.2 10.2-14.9 10.2-24.4 0-9.4-3.8-18-9.9-24.2L10.2 48.6C3.9 54.8 0 63.5 0 73c0 9.5 3.8 18 9.9 24.2zM127.6 68.8L79 117.4c-6.3 6.2-10.2 14.9-10.2 24.4 0 9.4 3.8 18 9.9 24.2l48.6-48.6c6.3-6.2 10.2-14.9 10.2-24.4 0-9.5-3.8-18-9.9-24.2zM127.3 48.7s0-.1 0 0c6.3-6.2 10.2-14.9 10.2-24.4 0-9.4-3.8-18-9.9-24.2L10.2 117.4C3.9 123.6 0 132.3 0 141.8c0 9.4 3.8 18 9.9 24.2L127.3 48.7z"
-                ></path>
-              </svg>
-              <p className="white fs-24px footer-title-box-title">
-                Tools for the world's most customer-centric businesses
-              </p>
+          <div>
+            <div className="footer">
+              <div className="footer-title-box">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 137.5 166"
+                    role="img"
+                    className="mb-15px"
+                    style={{ width: "25px", height: "30px" }}
+                  >
+                    <path
+                      fill="#1292ee"
+                      d="M9.9 97.2l48.6-48.6c6.3-6.2 10.2-14.9 10.2-24.4 0-9.4-3.8-18-9.9-24.2L10.2 48.6C3.9 54.8 0 63.5 0 73c0 9.5 3.8 18 9.9 24.2zM127.6 68.8L79 117.4c-6.3 6.2-10.2 14.9-10.2 24.4 0 9.4 3.8 18 9.9 24.2l48.6-48.6c6.3-6.2 10.2-14.9 10.2-24.4 0-9.5-3.8-18-9.9-24.2zM127.3 48.7s0-.1 0 0c6.3-6.2 10.2-14.9 10.2-24.4 0-9.4-3.8-18-9.9-24.2L10.2 117.4C3.9 123.6 0 132.3 0 141.8c0 9.4 3.8 18 9.9 24.2L127.3 48.7z"
+                    ></path>
+                  </svg>
+                  <p className="white fs-24px footer-title-box-title">
+                    Tools for the world's most customer-centric businesses
+                  </p>
+                </div>
+                <div className="footer-title-box-bottom">
+                  <a href="">
+                    <img src={bCorpImg} alt="" />
+                  </a>
+                  <a href="">
+                    <img src={pledgeImg} alt="" />
+                  </a>
+                </div>
+              </div>
+              <div className="footer-box">
+                <List
+                  listTitle="Platform"
+                  listData={[
+                    { title: "Shared Inbox", link: "#" },
+                    { title: "Knowledge Base", link: "#" },
+                    { title: "Live Chat", link: "#" },
+                    { title: "Messaging", link: "#" },
+                    { title: "Customer Management", link: "#" },
+                    { title: "Reporting", link: "#" },
+                    { title: "Integrations", link: "#" },
+                    { title: "iOS & Android", link: "#" },
+                    { title: "More Features", link: "#" },
+                  ]}
+                />
+              </div>
+              <div className="footer-box">
+                <List
+                  listTitle="Compare"
+                  listData={[
+                    { title: "Help Scout vs. Zendesk", link: "#" },
+                    { title: "Help Scout vs. Intercom", link: "#" },
+                    { title: "Help Scout vs. Front", link: "#" },
+                    { title: "Help Scout vs. Freshdesk", link: "#" },
+                  ]}
+                />
+              </div>
+              <div className="footer-box">
+                <List
+                  listTitle="Company"
+                  listData={[
+                    { title: "About Us", link: "#" },
+                    { title: "Careers", link: "#" },
+                    { title: "DEI Dashboard", link: "#" },
+                    { title: "Help Scout for Good", link: "#" },
+                    { title: "Startup Program", link: "#" },
+                    { title: "Brand Handbook", link: "#" },
+                    { title: "In the Works", link: "#", new: true },
+                    { title: "Terms & Privacy", link: "#" },
+                    { title: "Accessibility Statement", link: "#" },
+                  ]}
+                />
+              </div>
+              <div className="footer-box">
+                <List
+                  listTitle="Get Help"
+                  listData={[
+                    { title: "Developers", to: "true", link: "#" },
+                    { title: "Help Docs", to: "true", link: "#" },
+                    { title: "Free Training", link: "#" },
+                    { title: "Contact Sales", link: "#" },
+                    { title: "Status", to: "true", link: "#", revenu: "true" },
+                  ]}
+                />
+              </div>
             </div>
-            <div className="footer-box">
-              <List
-                listTitle="Platform"
-                listData={[
-                  { title: "Shared Inbox", link: "#" },
-                  { title: "Knowledge Base", link: "#" },
-                  { title: "Live Chat", link: "#" },
-                  { title: "Messaging", link: "#" },
-                  { title: "Customer Management", link: "#" },
-                  { title: "Reporting", link: "#" },
-                  { title: "Integrations", link: "#" },
-                  { title: "iOS & Android", link: "#" },
-                  { title: "More Features", link: "#" },
-                ]}
-              />
-            </div>
-            <div className="footer-box">
-              <List
-                listTitle="Compare"
-                listData={[
-                  { title: "Help Scout vs. Zendesk", link: "#" },
-                  { title: "Help Scout vs. Intercom", link: "#" },
-                  { title: "Help Scout vs. Front", link: "#" },
-                  { title: "Help Scout vs. Freshdesk", link: "#" },
-                ]}
-              />
-            </div>
-            <div className="footer-box">
-              <List
-                listTitle="Company"
-                listData={[
-                  { title: "About Us", link: "#" },
-                  { title: "Careers", link: "#" },
-                  { title: "DEI Dashboard", link: "#" },
-                  { title: "Help Scout for Good", link: "#" },
-                  { title: "Startup Program", link: "#" },
-                  { title: "Brand Handbook", link: "#" },
-                  { title: "In the Works", link: "#", new: true },
-                  { title: "Terms & Privacy", link: "#" },
-                  { title: "Accessibility Statement", link: "#" },
-                ]}
-              />
-            </div>
-            <div className="footer-box">
-              <List
-                listTitle="Get Help"
-                listData={[
-                  { title: "Developers", to: "true", link: "#" },
-                  { title: "Help Docs", to: "true", link: "#" },
-                  { title: "Free Training", link: "#" },
-                  { title: "Contact Sales", link: "#" },
-                  { title: "Status", to: "true", link: "#", revenu: "true" },
-                ]}
-              />
+            <div className="footer-social">
+              <div className="footer-social-icons">
+                <a
+                  aria-label="Twitter"
+                  href="https://twitter.com/helpscout"
+                  className="footer-social-icon"
+                  title="Twitter"
+                >
+                  <TwitterIcon />
+                </a>
+                <a
+                  aria-label="Facebook"
+                  href="https://www.facebook.com/helpscout"
+                  className="footer-social-icon"
+                  title="Facebook"
+                >
+                  <FacebookIcon />
+                </a>
+                <a
+                  aria-label="LinkedIn"
+                  href="https://www.linkedin.com/company/help-scout"
+                  className="footer-social-icon"
+                  title="LinkedIn"
+                >
+                  <LinkdenIcon />
+                </a>
+              </div>
+              <div className="footer-copyrights">
+                <img src={signImg} alt="" />
+                <p className="fs-14px white graphik-medium">
+                  Made by hand in over 75 cities around the world.
+                </p>
+                <p className="fs-14px gray">© 2021 Help Scout</p>
+              </div>
             </div>
           </div>
         </div>
