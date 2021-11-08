@@ -112,7 +112,7 @@ function App() {
           </div>
         </div>
       </div>
-      {/*  */}
+
       <div className="container-wrapper">
         <p className="cards-title fs-36px text-center graphik-medium darkest-blue">
           What you can do with Help Scout
@@ -134,7 +134,6 @@ function App() {
         img={integrationImg}
       />
 
-      {/* support */}
       <div className="support-wrapper">
         <div className="container-wrapper">
           <div className="support-titles ">
@@ -154,11 +153,10 @@ function App() {
           <div className="canvas-wrapper">
             <div className="canvas">
               <div className="ring ring-outer-1"></div>
+              <div className="ring ring-outer-2"></div>
               <div class="ring inner-ring-1"></div>
               <div class="ring inner-ring-2"></div>
               <div class="ring inner-ring-3"></div>
-
-              {/* .cbkQR */}
 
               <div className="cbkQR live-chat">
                 <SupportCard img={liveChatImg} className="bg-ring-green first">
@@ -221,7 +219,6 @@ function App() {
                 </div>
               </div>
 
-              {/*  */}
               <div className="ring-logo">
                 <img src={ringLogo} alt="" />
               </div>
@@ -288,7 +285,6 @@ function App() {
         </div>
       </div>
 
-      {/*  */}
       <div className="footer-wrapper">
         <div className="container-wrapper">
           <div>
@@ -320,60 +316,68 @@ function App() {
                   </a>
                 </div>
               </div>
-              <div className="footer-box">
-                <List
-                  listTitle="Platform"
-                  listData={[
-                    { title: "Shared Inbox", link: "#" },
-                    { title: "Knowledge Base", link: "#" },
-                    { title: "Live Chat", link: "#" },
-                    { title: "Messaging", link: "#" },
-                    { title: "Customer Management", link: "#" },
-                    { title: "Reporting", link: "#" },
-                    { title: "Integrations", link: "#" },
-                    { title: "iOS & Android", link: "#" },
-                    { title: "More Features", link: "#" },
-                  ]}
-                />
-              </div>
-              <div className="footer-box">
-                <List
-                  listTitle="Compare"
-                  listData={[
-                    { title: "Help Scout vs. Zendesk", link: "#" },
-                    { title: "Help Scout vs. Intercom", link: "#" },
-                    { title: "Help Scout vs. Front", link: "#" },
-                    { title: "Help Scout vs. Freshdesk", link: "#" },
-                  ]}
-                />
-              </div>
-              <div className="footer-box">
-                <List
-                  listTitle="Company"
-                  listData={[
-                    { title: "About Us", link: "#" },
-                    { title: "Careers", link: "#" },
-                    { title: "DEI Dashboard", link: "#" },
-                    { title: "Help Scout for Good", link: "#" },
-                    { title: "Startup Program", link: "#" },
-                    { title: "Brand Handbook", link: "#" },
-                    { title: "In the Works", link: "#", new: true },
-                    { title: "Terms & Privacy", link: "#" },
-                    { title: "Accessibility Statement", link: "#" },
-                  ]}
-                />
-              </div>
-              <div className="footer-box">
-                <List
-                  listTitle="Get Help"
-                  listData={[
-                    { title: "Developers", to: "true", link: "#" },
-                    { title: "Help Docs", to: "true", link: "#" },
-                    { title: "Free Training", link: "#" },
-                    { title: "Contact Sales", link: "#" },
-                    { title: "Status", to: "true", link: "#", revenu: "true" },
-                  ]}
-                />
+
+              <div className="footer-lists">
+                <div className="footer-box">
+                  <List
+                    listTitle="Platform"
+                    listData={[
+                      { title: "Shared Inbox", link: "#" },
+                      { title: "Knowledge Base", link: "#" },
+                      { title: "Live Chat", link: "#" },
+                      { title: "Messaging", link: "#" },
+                      { title: "Customer Management", link: "#" },
+                      { title: "Reporting", link: "#" },
+                      { title: "Integrations", link: "#" },
+                      { title: "iOS & Android", link: "#" },
+                      { title: "More Features", link: "#" },
+                    ]}
+                  />
+                </div>
+                <div className="footer-box">
+                  <List
+                    listTitle="Compare"
+                    listData={[
+                      { title: "Help Scout vs. Zendesk", link: "#" },
+                      { title: "Help Scout vs. Intercom", link: "#" },
+                      { title: "Help Scout vs. Front", link: "#" },
+                      { title: "Help Scout vs. Freshdesk", link: "#" },
+                    ]}
+                  />
+                </div>
+                <div className="footer-box">
+                  <List
+                    listTitle="Company"
+                    listData={[
+                      { title: "About Us", link: "#" },
+                      { title: "Careers", link: "#" },
+                      { title: "DEI Dashboard", link: "#" },
+                      { title: "Help Scout for Good", link: "#" },
+                      { title: "Startup Program", link: "#" },
+                      { title: "Brand Handbook", link: "#" },
+                      { title: "In the Works", link: "#", new: true },
+                      { title: "Terms & Privacy", link: "#" },
+                      { title: "Accessibility Statement", link: "#" },
+                    ]}
+                  />
+                </div>
+                <div className="footer-box">
+                  <List
+                    listTitle="Get Help"
+                    listData={[
+                      { title: "Developers", to: "true", link: "#" },
+                      { title: "Help Docs", to: "true", link: "#" },
+                      { title: "Free Training", link: "#" },
+                      { title: "Contact Sales", link: "#" },
+                      {
+                        title: "Status",
+                        to: "true",
+                        link: "#",
+                        revenu: "true",
+                      },
+                    ]}
+                  />
+                </div>
               </div>
             </div>
             <div className="footer-social">
@@ -404,11 +408,21 @@ function App() {
                 </a>
               </div>
               <div className="footer-copyrights">
-                <img src={signImg} alt="" />
-                <p className="fs-14px white graphik-medium">
-                  Made by hand in over 75 cities around the world.
-                </p>
+                <span>
+                  <img src={signImg} alt="" />
+                  <p className="fs-14px white graphik-medium">
+                    Made by hand in over 75 cities around the world.
+                  </p>
+                </span>
                 <p className="fs-14px gray">© 2021 Help Scout</p>
+                <div className="footer-title-box-bottom">
+                  <a href="">
+                    <img src={bCorpImg} alt="" />
+                  </a>
+                  <a href="">
+                    <img src={pledgeImg} alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
