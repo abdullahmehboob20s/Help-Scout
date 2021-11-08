@@ -302,6 +302,11 @@ ul {
   margin-bottom: 40px;
 }
 
+/*  */
+.border-red {
+  border: 2px solid red;
+}
+
 /* ======================================================================================================================= */
 /* ======================================================================================================================= */
 /* ======================================================================================================================= */
@@ -693,52 +698,62 @@ ul {
   /* width: 125px;
   height: 125px; */
   z-index: 4;
-  transform: none;
 }
 
-.cbkQR.live-chat {
-  height: 480px;
-  transform: translate(-50%, -100%) rotate(-69deg);
+.live-chat {
+  position: absolute;
+  top: 230px;
+  left: 10px;
 }
 
-.cbkQR.shared-inbox {
-  height: 480px;
-  transform: translate(-50%, -100%) rotate(-23.3333deg);
+.proactive {
+  position: absolute;
+  top: 230px;
+  right: 10px;
+}
+.help-center {
+  position: absolute;
+  top: 0;
+  right: 250px;
+
+  width: fit-content;
+  height: fit-content;
+}
+.shared-inbox {
+  position: absolute;
+  top: 0;
+  left: 250px;
 }
 
-.cbkQR.help-center {
-  height: 480px;
-  transform: translate(-50%, -100%) rotate(23.3333deg);
+.customer-data {
+  position: absolute;
+  top: 380px;
+  left: 250px;
+  z-index: 10 !important;
 }
 
-.cbkQR.proactive {
-  height: 480px;
-  transform: translate(-50%, -100%) rotate(69deg);
+.tools {
+  position: absolute;
+  top: 270px;
+  left: 320px;
+  z-index: 10 !important;
 }
-
-.cbkQR.customer-data {
-  height: 197.5px;
-  transform: translate(-50%, -100%) rotate(-86deg);
+.integration {
+  position: absolute;
+  top: 380px;
+  right: 250px;
+  z-index: 10 !important;
 }
-.cbkQR.tools {
-  height: 197.5px;
-  transform: translate(-50%, -100%) rotate(-28.6666deg);
-}
-.cbkQR.report {
-  height: 197.5px;
-  transform: translate(-50%, -100%) rotate(28.6666deg);
-}
-.cbkQR.integration {
-  height: 197.5px;
-  transform: translate(-50%, -100%) rotate(86deg);
+.report {
+  position: absolute;
+  top: 270px;
+  right: 320px;
+  z-index: 10 !important;
 }
 
 .ring-outer-content {
   width: 135px;
   height: 135px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -781,9 +796,6 @@ ul {
 }
 
 .ring-inner-content {
-  position: absolute;
-  top: 0px;
-  left: 0px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -912,22 +924,6 @@ ul {
     gap: 1.5rem;
   }
 
-  .cbkQR.live-chat {
-    transform: translate(-50%, -100%) rotate(-31.2036deg);
-  }
-
-  .cbkQR.shared-inbox {
-    transform: translate(-50%, -100%) rotate(-10.4494deg);
-  }
-
-  .cbkQR.help-center {
-    transform: translate(-50%, -100%) rotate(10.4494deg);
-  }
-
-  .cbkQR.proactive {
-    transform: translate(-50%, -100%) rotate(31.3393deg);
-  }
-
   .ring-outer-content.first {
     transform: rotate(31.3393deg);
   }
@@ -939,6 +935,66 @@ ul {
   }
   .ring-outer-content.fourth {
     transform: rotate(-31.3393deg);
+  }
+
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+
+  .live-chat {
+    position: absolute;
+    top: 50px;
+    left: 175px;
+  }
+
+  .proactive {
+    position: absolute;
+    top: 50px;
+    right: 175px;
+  }
+  .help-center {
+    position: absolute;
+    top: 0;
+    right: 320px;
+
+    width: fit-content;
+    height: fit-content;
+  }
+  .shared-inbox {
+    position: absolute;
+    top: 0;
+    left: 320px;
+  }
+
+  .customer-data {
+    position: absolute;
+    top: 380px;
+    left: 285px;
+    z-index: 10 !important;
+  }
+
+  .tools {
+    position: absolute;
+    top: 290px;
+    left: 340px;
+    z-index: 10 !important;
+  }
+  .integration {
+    position: absolute;
+    top: 380px;
+    right: 285px;
+    z-index: 10 !important;
+  }
+  .report {
+    position: absolute;
+    top: 290px;
+    right: 340px;
+    z-index: 10 !important;
+  }
+
+  .product-overview {
+    overflow: hidden;
   }
 }
 
@@ -1058,5 +1114,71 @@ ul {
 
   .ring-inner-content {
     top: 20px;
+  }
+
+  .live-chat {
+    position: absolute;
+    top: 150px;
+    left: 330px;
+  }
+
+  .proactive {
+    position: absolute;
+
+    top: 150px;
+    right: 330px;
+  }
+  .help-center {
+    position: absolute;
+    top: 10px;
+    right: 330px;
+
+    width: fit-content;
+    height: fit-content;
+  }
+  .shared-inbox {
+    position: absolute;
+    top: 10px;
+    left: 330px;
+  }
+
+  .ring-outer-2 {
+    width: 860px;
+    height: 860px;
+    background-size: contain;
+  }
+
+  .canvas-wrapper {
+    height: 555px;
+  }
+
+  .canvas {
+    height: 992px;
+  }
+
+  .customer-data {
+    position: absolute;
+    top: 425px;
+    left: 285px;
+    z-index: 10 !important;
+  }
+
+  .tools {
+    position: absolute;
+    top: 320px;
+    left: 340px;
+    z-index: 10 !important;
+  }
+  .integration {
+    position: absolute;
+    top: 425px;
+    right: 285px;
+    z-index: 10 !important;
+  }
+  .report {
+    position: absolute;
+    top: 320px;
+    right: 340px;
+    z-index: 10 !important;
   }
 }

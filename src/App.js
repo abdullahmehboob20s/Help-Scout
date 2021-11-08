@@ -159,67 +159,83 @@ function App() {
               <div class="ring inner-ring-2"></div>
               <div class="ring inner-ring-3"></div>
 
-              <div className="cbkQR live-chat">
-                <SupportCard img={liveChatImg} className="bg-ring-green first">
-                  Live <br /> Chat
-                </SupportCard>
-              </div>
-              <div className="cbkQR shared-inbox">
-                <SupportCard img={inboxImg} className="bg-ring-pink second">
-                  SHARED
-                  <br /> INBOX
-                </SupportCard>
-              </div>
-              <div className="cbkQR help-center">
-                <SupportCard img={helpCenterImg} className="bg-ring-blue third">
-                  HELP
-                  <br />
-                  CENTER
-                </SupportCard>
-              </div>
-              <div className="cbkQR proactive">
-                <SupportCard img={heartImg} className="bg-ring-purple fourth">
-                  PROACTIVE <br /> MESSAGES
-                </SupportCard>
+              <SupportCard
+                tooltipTo="top"
+                img={liveChatImg}
+                className="live-chat bg-ring-green"
+              >
+                Live <br /> Chat
+              </SupportCard>
+              <SupportCard
+                tooltipTo="bottom"
+                img={inboxImg}
+                className="bg-ring-pink shared-inbox"
+              >
+                SHARED
+                <br /> INBOX
+              </SupportCard>
+              <SupportCard
+                tooltipTo="bottom"
+                img={helpCenterImg}
+                className="bg-ring-blue help-center"
+              >
+                HELP
+                <br />
+                CENTER
+              </SupportCard>
+              <SupportCard
+                tooltipTo="top"
+                img={heartImg}
+                className="proactive bg-ring-purple"
+              >
+                PROACTIVE <br /> MESSAGES
+              </SupportCard>
+
+              <div className="customer-data">
+                <ToolTip to="top">
+                  <div className="ring-inner-content ">
+                    <img src={papersImg} className="mb-15px" alt="" />
+                    <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
+                      CUSTOMER
+                      <br />
+                      DATA
+                    </p>
+                  </div>
+                </ToolTip>
               </div>
 
-              <div className="cbkQR customer-data">
-                <div className="ring-inner-content first">
-                  <img src={papersImg} className="mb-15px" alt="" />
-                  <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
-                    CUSTOMER
-                    <br />
-                    DATA
-                  </p>
-                </div>
+              <div className="tools">
+                <ToolTip to="top">
+                  <div className="ring-inner-content ">
+                    <img src={hammerImg} className="mb-15px" alt="" />
+                    <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
+                      COLLABORATION
+                      <br />
+                      TOOLS
+                    </p>
+                  </div>
+                </ToolTip>
               </div>
-              <div className="cbkQR tools">
-                <div className="ring-inner-content second">
-                  <img src={hammerImg} className="mb-15px" alt="" />
-                  <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
-                    COLLABORATION
-                    <br />
-                    TOOLS
-                  </p>
-                </div>
+              <div className="report">
+                <ToolTip to="top">
+                  <div className="ring-inner-content">
+                    <img src={analyticsImg} className="mb-15px" alt="" />
+                    <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
+                      REPORTING
+                    </p>
+                  </div>
+                </ToolTip>
               </div>
-              <div className="cbkQR report">
-                <div className="ring-inner-content third">
-                  <img src={analyticsImg} className="mb-15px" alt="" />
-                  <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
-                    REPORTING
-                  </p>
-                </div>
+              <div className="integration">
+                <ToolTip to="top">
+                  <div className="ring-inner-content  ">
+                    <img src={puzzelImg} className="mb-15px" alt="" />
+                    <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
+                      INTEGRATIONS
+                    </p>
+                  </div>
+                </ToolTip>
               </div>
-              <div className="cbkQR integration">
-                <div className="ring-inner-content fourth">
-                  <img src={puzzelImg} className="mb-15px" alt="" />
-                  <p className="uppercase fs-10px light-blue text-center graphik-medium lh-2">
-                    INTEGRATIONS
-                  </p>
-                </div>
-              </div>
-
               <div className="ring-logo">
                 <img src={ringLogo} alt="" />
               </div>
