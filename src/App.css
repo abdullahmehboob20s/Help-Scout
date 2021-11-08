@@ -591,7 +591,6 @@ ul {
     ),
     rgb(255, 255, 255);
   padding-bottom: 0px;
-  overflow: hidden;
 
   margin-top: clamp(80px, 6.944444444444445vw, 100px);
 }
@@ -607,8 +606,9 @@ ul {
   position: relative;
   width: 100vw;
   max-width: 925px;
-  height: 556px;
+  height: 510px;
   margin: 0px auto;
+  /* overflow: hidden; */
   /* overflow: hidden; */
 }
 
@@ -748,6 +748,7 @@ ul {
   justify-content: center;
   padding-bottom: 6px;
   cursor: default;
+  z-index: 10000000000;
 }
 
 .bg-ring-green {

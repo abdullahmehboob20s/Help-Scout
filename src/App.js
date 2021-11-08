@@ -39,6 +39,7 @@ import ringLogo from "assets/images/ring-logo.webp";
 
 import signImg from "assets/images/sign.png";
 import SupportCard from "components/SupportCard/SupportCard";
+import ToolTip from "components/ToolTip/ToolTip";
 
 function App() {
   return (
@@ -227,7 +228,10 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-content">
+      <div
+        className="bg-content"
+        style={{ position: "relative", zIndex: "10" }}
+      >
         <div className="resources-wrapper">
           <div className="container-wrapper">
             <div className="resources">

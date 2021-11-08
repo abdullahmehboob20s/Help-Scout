@@ -1,3 +1,4 @@
+import ToolTip from "components/ToolTip/ToolTip";
 import React from "react";
 
 function SupportCard(props) {
