@@ -1,0 +1,84 @@
+.register-form-wrapper {
+  padding: 40px 60px 50px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 4%) 0px 2px 8px, rgb(99 116 134 / 3%) 0px 5px 8px;
+
+  width: 100%;
+  max-width: 603px;
+  margin: 0 auto;
+}
+
+.free-trial-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.free-trial-box > li {
+  position: relative;
+
+  list-style-image: url(https://dhmmnd775wlnp.cloudfront.net/d1e0a2e424/images/signup/icon-check-plus.svg);
+  list-style-position: outside;
+}
+
+.register-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 2rem;
+}
+
+.register-form > div:not(:nth-child(1), :nth-child(2)) {
+  grid-column: 1/-1;
+}
+
+.containerClass .form-control {
+  width: 100% !important;
+
+  box-sizing: border-box;
+  font-size: 14px !important;
+  height: 40px !important;
+  line-height: 40px;
+  margin-bottom: 0;
+  width: 100%;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  background-color: #fff;
+  border: 1px solid #c5ced6;
+  border-radius: 3px;
+  color: #314351;
+  display: inline-block;
+  font-weight: 400;
+  outline: none;
+  margin-bottom: 0.5rem;
+
+  padding-left: 60px !important;
+}
+
+.containerClass .selected-flag {
+  width: 50px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+
+.flag {
+  margin-left: -10px;
+}
+.arrow {
+  border: none !important;
+  width: 6px !important;
+  height: 6px !important;
+  margin-top: -4px !important;
+  left: 22px !important;
+  transform: rotate(45deg);
+  border-bottom: 2px solid var(--gray) !important;
+  border-right: 2px solid var(--gray) !important;
+}
+
+.flag-dropdown {
+  background-color: transparent !important;
+  border-right: 0 !important;
+}
