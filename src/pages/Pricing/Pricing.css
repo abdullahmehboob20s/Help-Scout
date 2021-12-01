@@ -63,6 +63,7 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  flex-wrap: wrap;
 }
 .pricing-item::before {
   content: "";
@@ -296,4 +297,181 @@
   border-radius: 6px;
   transform: scale(1.05) translateZ(0px);
   box-shadow: rgb(22 51 127 / 20%) 0px 22px 28px;
+}
+
+.discount-good {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.discount-good span {
+  display: flex;
+  flex-direction: column;
+}
+
+.discount-disc {
+  line-height: 1.8;
+}
+
+.pricing-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  gap: 6rem;
+}
+
+.pricing-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.pricing-section-right {
+  min-width: 450px;
+}
+
+.pricing-section-right img {
+  width: 100%;
+}
+
+.pricing-section-right.tree {
+  min-width: 301px;
+  position: relative;
+  margin-right: 100px;
+}
+
+.pricing-section-right.tree img {
+  width: 100%;
+}
+
+.tree-badge {
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  right: -80px;
+  width: 167px !important;
+}
+
+.get-started {
+  background: center bottom no-repeat rgb(248, 249, 252);
+}
+
+.get-started-content {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1300px) {
+  .pricing-img-left,
+  .pricing-img-right {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pricing-card {
+    padding: 40px 30px;
+  }
+
+  .pricing-item {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pricing-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: unset;
+    align-items: center;
+  }
+
+  .pricing-card {
+    margin: 0 0;
+  }
+
+  .pricing-section-right.tree {
+    margin-right: 60px;
+  }
+
+  .pricing-section {
+    gap: 3rem;
+  }
+
+  .pricing-section-left {
+    width: 100%;
+  }
+  .pricing-section-right {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 780px) {
+  .discout-cards {
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+  .pricing-section {
+    gap: 3rem;
+    flex-direction: column;
+  }
+
+  .pricing-section.reverse {
+    flex-direction: column;
+  }
+
+  .pricing-section-right.tree {
+    margin-right: 0px;
+    max-width: 301px;
+  }
+  .get-started-content {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .get-started a {
+    width: 100%;
+    display: block;
+  }
+  .pricing-page {
+    padding-top: 80px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .package-select {
+    flex-direction: column;
+    align-items: unset;
+    gap: 1.5rem;
+  }
+
+  .pricing-item.fs-16px {
+    font-size: 14px;
+    gap: 0.4rem;
+  }
+
+  .pricing-item::before {
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+  }
+
+  .pricing-section-right.tree {
+    min-width: unset !important;
+    width: 70%;
+  }
+
+  .tree-badge {
+    width: 135px !important;
+    right: -60px;
+  }
+
+  .pricing-card {
+    padding: 40px 20px;
+  }
 }

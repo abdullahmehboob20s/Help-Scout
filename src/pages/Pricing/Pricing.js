@@ -1,4 +1,6 @@
+import LinkBtn from "components/LinkBtn/LinkBtn";
 import PricingCard from "components/PricingCard/PricingCard";
+import Footer from "layouts/Footer/Footer";
 import Navbar from "layouts/Navbar/Navbar";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -30,10 +32,10 @@ function Pricing() {
   };
 
   return (
-    <div>
+    <>
       <Navbar />
 
-      <div className="pt-90px">
+      <div className="pricing-page pt-90px">
         <div className="container-wrapper">
           <p className="text-center fs-36px dark-blue graphik-medium py-30px mb-30px">
             Happy customers. Happy team.{" "}
@@ -216,24 +218,133 @@ function Pricing() {
           </div>
 
           <div className="discount">
-            <p className="text-center fs-30px dark-blue graphik-medium mb-50px">
+            <p className="text-center fs-30px dark-blue graphik-medium mb-55px">
               Looking for a discount?
             </p>
 
             <div className="mb-100px">
               <div className="discout-cards ">
                 <Link to="/" className="discout-card pointer">
-                  asdhjksahdjk
+                  <p className="discount-good fs-30px dark-blue text-center mb-30px">
+                    Help Scout
+                    <span>
+                      {" "}
+                      for Good
+                      <img
+                        src="https://hs-marketing.imgix.net/images/pages/pricing/PricingPage--hsfg-highlight.png?ixlib=gatsbyHook-1.6.12&fit=min&w=130&h=10"
+                        alt=""
+                      />
+                    </span>
+                  </p>
+
+                  <p className="discount-disc graphik-regular fs-21px dark-blue mb-35px">
+                    For organizations with a focus on environmental
+                    sustainability & social impact.
+                  </p>
+
+                  <LinkBtn
+                    wrapperClassName="margin-center w-fit-content "
+                    className="fs-18px "
+                    title="Learn More"
+                  />
                 </Link>
                 <Link to="/" className="discout-card pointer">
-                  asdhjksahdjk
+                  <p className="discount-good fs-30px dark-blue text-center mb-20px">
+                    Help Scout for Startups
+                    <img
+                      src="https://hs-marketing.imgix.net/images/pages/pricing/PricingPage--startups-rocket.png?ixlib=gatsbyHook-1.6.12&fit=min&w=51&h=55"
+                      alt=""
+                    />
+                  </p>
+
+                  <p className="discount-disc graphik-regular fs-21px dark-blue mb-35px">
+                    For new companies that could use a price break for the first
+                    year.
+                  </p>
+
+                  <LinkBtn
+                    wrapperClassName="margin-center w-fit-content "
+                    className="fs-18px "
+                    title="Learn More"
+                  />
                 </Link>
               </div>
             </div>
           </div>
+
+          <div className="mb-100px">
+            <div className="pricing-section">
+              <div className="pricing-section-left">
+                <p className="fs-30px dark-blue graphik-medium mb-30px">
+                  You can count on us
+                </p>
+                <p className="fs-21px light-blue lh-2">
+                  We're here to help from day one, with 24/6 outstanding
+                  support, backed up by a 30-day money back guarantee. This is
+                  the beginning of a beautiful friendship.
+                </p>
+              </div>
+              <div className="pricing-section-right">
+                <img
+                  src="https://hs-marketing.imgix.net/images/pages/pricing/PricingPage--support-team.png?ixlib=gatsbyHook-1.6.12&fit=min&w=450&h=385"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-100px">
+            <div className="pricing-section reverse">
+              <div className="pricing-section-left">
+                <p className="fs-30px dark-blue graphik-medium mb-30px">
+                  One tree per customer
+                </p>
+                <p className="fs-21px light-blue lh-2">
+                  As a certified B Corp, we’re doing what we can to leave the
+                  world better than we found it. When you become a customer,
+                  we’re planting a tree with The Nature Conservancy to say
+                  thanks.
+                </p>
+              </div>
+              <div className="pricing-section-right tree">
+                <img
+                  src="https://hs-marketing.imgix.net/images/pages/pricing/PricingPage--bcorp-logo.png?ixlib=gatsbyHook-1.6.12&fit=min&w=164&h=161"
+                  alt=""
+                  className="tree-badge"
+                />
+                <img
+                  src="https://hs-marketing.imgix.net/images/pages/pricing/PricingPage--bcorp-trees.png?ixlib=gatsbyHook-1.6.12&fit=min&w=301&h=381"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
+        <div className="get-started">
+          <div className="container-wrapper">
+            <div className="py-100px text-center get-started-content ">
+              <p className="fs-30px graphik-medium dark-blue mb-20px">
+                Get started with Help Scout
+              </p>
+              <p className="light-blue fs-18px lh-2 mb-50px">
+                Want to learn what Help Scout can do for you? See for yourself
+                with a free trial — we'll happily extend you if you need more
+                time.
+              </p>
+
+              <Link
+                to="/register"
+                className="button-wrapper radius-4px bg-sharp-blue white graphik-regular weight-5 fs-18px"
+              >
+                Free Trial
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <Footer />
       </div>
-    </div>
+    </>
   );
 }
 

@@ -165,3 +165,45 @@
 .register-form-brands img {
   width: 150px;
 }
+
+@media (max-width: 1000px) {
+  .register-image-1,
+  .register-books-img {
+    display: none;
+  }
+
+  .register-wrapper {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#f2f6ff),
+      to(#f2f6ff)
+    );
+    background-color: #f2f6ff;
+  }
+}
+
+@media (max-width: 760px) {
+  .register-form-footer {
+    display: none;
+  }
+
+  .register-form > div:not(:nth-child(1), :nth-child(2)) {
+    grid-column: 1/-1;
+  }
+  .register-form > div {
+    grid-column: 1/-1;
+  }
+
+  .register-form-wrapper {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .free-trial-box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

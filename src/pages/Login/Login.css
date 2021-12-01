@@ -109,3 +109,44 @@
   background: #fff;
   border-color: #b7c2cc;
 }
+
+@media (max-width: 760px) {
+  .login.left {
+    display: none;
+  }
+  .login {
+    width: 100%;
+  }
+
+  .login-container {
+    max-width: 480px;
+    padding: 0 0rem;
+  }
+
+  .login.right {
+    padding: 40px 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .login-title {
+    margin-top: 0;
+  }
+}
+@media (max-width: 500px) {
+  .login.left {
+    display: none;
+  }
+  .login {
+    width: 100%;
+  }
+
+  .login-container {
+    max-width: 480px;
+    padding: 0 0rem;
+  }
+
+  .login.right {
+    padding: 40px 1.5rem;
+    padding-bottom: 3rem;
+  }
+}
