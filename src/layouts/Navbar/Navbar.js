@@ -175,9 +175,12 @@ function Navbar() {
                 <div className="navbar-link light-blue graphik-regular fs-15px pointer ">
                   Demo
                 </div>
-                <div className="navbar-link light-blue graphik-regular fs-15px pointer ">
+                <Link
+                  to="/pricing"
+                  className="navbar-link light-blue graphik-regular fs-15px pointer "
+                >
                   Pricing
-                </div>
+                </Link>
               </div>
 
               <div className="navbar-btns">

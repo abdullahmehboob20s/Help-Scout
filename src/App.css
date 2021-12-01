@@ -50,6 +50,10 @@
   font-family: "GraphikRegular";
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +65,7 @@
   font-size: 100%;
 
   /* font-sizes */
+  --fs-56px: 56px;
   --fs-48px: clamp(30px, 3.3333333333333335vw, 48px);
   --fs-21px: clamp(18px, 1.4583333333333333vw, 21px);
   --fs-12px: 12px;
@@ -133,6 +138,9 @@
 }
 .fs-48px {
   font-size: var(--fs-48px);
+}
+.fs-56px {
+  font-size: var(--fs-56px);
 }
 
 /* colors */
@@ -266,6 +274,9 @@ ul {
 }
 
 /* paddings */
+.pt-100px {
+  padding-top: 100px;
+}
 .pt-90px {
   padding-top: clamp(50px, 6.25vw, 90px);
 }
@@ -352,6 +363,21 @@ ul {
 }
 .mb-65px {
   margin-bottom: 65px;
+}
+.mb-70px {
+  margin-bottom: 70px;
+}
+.mb-75px {
+  margin-bottom: 75px;
+}
+.mb-80px {
+  margin-bottom: 80px;
+}
+.mb-85px {
+  margin-bottom: 85px;
+}
+.mb-100px {
+  margin-bottom: 100px;
 }
 
 /*  */
